@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #0f0f0f;
+        margin: 0;
+        padding: 20px;
+      }
+      p, li {
+        color: #0ecc38;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: #0ecc38">Hello from the frontend</h1>
+    <% if (data && data.length) { %>
+      <ul>
+        <% data.forEach(function(name){ %>
+          <li><%= name %></li>
+        <% }) %>
+      </ul>
+    <% } else { %>
+      <p>No data</p>
+    <% } %>
+  </body>
+</html>
